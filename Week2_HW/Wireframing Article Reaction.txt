@@ -1,0 +1,7 @@
+The article written by Lissa Aguilar, titled "Five Important Considerations for Wireframing" is a warning or a 
+public service announcement piece of writing from one UX Architect to those attempting to do a UX developers job.
+This article is more so aimed to an ameteur or someone dabbling in web development coding, as I assume someone with
+ more knowledge in this area of expertise would know the signicance of wireframing. The importance of wireframing 
+is very much emphasized in this article. It is proven to be a vital step that saves time, minimizes confusion, and
+ creates a clear path when creating a website. Wireframing is a necessary step to perform, and if you don't do it
+ you just create unnecessary problems for yourself, that could have easily been avoided.
