@@ -1,0 +1,55 @@
+/*transparent blue background, and min height for all block elements so that we can easily 
+/*keep track of our elements*/
+
+/*universal selector to remove default margins and padding from all elements*/
+/*{
+	margin:0;
+	padding:0;
+}*/
+
+body{
+	margin:0;
+	padding:0;
+	font-family:"Helvetica Neue", Helvetica Arial,sans-serif;
+}
+/*grouped selectors*/
+div, header, footer, main, article, aside, section {
+	min-height: 100px;
+	/* rbga color red green blue aplha*/
+	background-color: rgba(0,100,255,0.2);
+}
+
+main{
+	width:960px;
+	margin:0 auto;
+}
+/*use a psuedo class selector to add block empty content with zero height
+that clears both sides This helps us avoid/fix wrappeing issues when floating.
+We apply the clearfix to the wrappeer/container elemeents */
+.clearfix::after{
+	display: block:
+	clear: both;
+	content:'';
+	/*to ensure compatibility*/
+	height:0;
+	font-size: 0;
+	/*one final paranoid fallback*/
+	visibility: hidden;
+	opacity: 0;
+
+}
+
+/*descendant selector for more css specificity*/
+article.col-pixels section{
+	/*960 container-6*10px margins*/
+	width:300px;
+	margin:0 10px;
+	float:left;
+}
+
+/*Descendant selecotr again for more css specificity*/
+article.col-fluid section{
+	margin: 2.5%;
+	width: 25%;
+	float: left;
+}
