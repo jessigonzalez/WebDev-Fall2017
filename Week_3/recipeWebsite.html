@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Chocholate Chip Cookies</title>
+	<link rel="stylesheet" type="text/css" href="css/recipeWebsite.css">
+	<style type="text/css">
+		div, header, footer, section, aside, article, main{
+			min-height: 100px;
+			/* RGBA color, red, green, blue (0-255) and alpha (0-1) */
+			background-color: rgba(175,100,255,0.2)
+		}
+		div.wrapper{
+			width: 900px;
+			/* use margin 0 auto to center our wrapper div within the browser window */
+			margin: 0 auto;
+			/* add a little padding so we can see how child elements stack more clearly */
+			padding: 30px;
+		}
+		header, footer{
+			width: 100%;
+		}
+		/* Define these after adding to html! Notice the clear issue with floating! */
+		article{
+			width: 600px;
+			float: left;
+		}
+		aside{
+			width: 300px;
+			/* Define a height so we can see it better */
+			min-height: 424px ;
+			float: left;
+		}
+		/* use this to fix the container/wrapping float issues */
+		br.clear{
+			clear: both;
+			height: 0;
+		}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<ul class="menu">
+			<li><a class="active" href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Browse Recipes</a></li>
+		</ul>
+
+	</header>
+	<main>
+		<h1>Let's Get Started!</h1>
+		<article>
+			<h2>Recipe</h2>
+			<section><h3>Ingredients</h3></section>
+			<section><h3>Instructions</h3></section>
+			<section><h3>Similar Recipes</h3></section>
+		</article>
+		<aside><h2>Finished Product</h2></aside>
+		<!-- clear out so our wrapper div wraps around. we will discuss several clearfixes this week -->
+		<br class="clear"/>
+	</main>
+	<footer><h3>Other Suggestions</h3></footer>
+</div>
+
+</body>
+</html>
