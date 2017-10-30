@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<title>rhymRunner</title>
+<meta charset="utf-8">
+<style type="text/css">
+	body {
+	  margin: 0;
+	  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	}
+	/* Style the header */
+	.header {
+	    background-color: #66ccff;
+	    padding: 5px;
+	    text-align: center;
+	    color: white;
+	}
+	
+	ul.menu{
+		/* hide bullet points */
+		list-style-type: none;
+		margin: 0;
+		padding:0;
+		background-color: #999;
+	}
+
+	li {
+		/*float: left;*/
+		/*display: inline*/
+		display: inline-block;
+	}
+
+	/* only apply this style to anchor tags within a list item*/
+	li a {
+			/*anchor tags be default display inline, here we will tell them to behave like block level elements*/
+			display: block;
+			text-align: center;
+			width: 100px;
+			padding: 10px;
+			text-decoration: none;
+			color: #333;
+		}
+
+	li a:hover {
+			background-color: #111;
+			color: #FFF;
+		}
+
+	li a.active{
+			background-color: #888;
+		}
+</style>
+<head>
+
+</head>
+
+
+<body>
+	<div class="header">
+	  <h1>rhymRunner</h1>
+	</div>
+
+	<ul class="menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
+		</ul>  
+</body>
+</html>

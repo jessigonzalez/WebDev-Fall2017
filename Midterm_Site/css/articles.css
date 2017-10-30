@@ -1,0 +1,71 @@
+@charset "utf-8"
+body {
+	  margin: 0px;
+	  padding: 0px;
+	  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	}
+	/* Style the header */
+	.header {
+	    background-color: #66ccff;
+	    padding: 5px;
+	    text-align: center;
+	    color: white;
+	    overflow: none
+	}
+	.header a {
+		text-decoration: none;
+		color:white;
+	}
+	.subheader {
+		text-align: center;
+		border-bottom: 2px solid #abb5ba;
+	}
+	ul.nav {
+		/* hide bullet points */
+		list-style-type: none;
+		margin: 0;
+		padding:0;
+		background-color: #abb5ba;
+	}
+	li {
+		/*float: left;*/
+		/*display: inline*/
+		display: inline-block;
+		margin-left: 15%;
+		margin-right: 5%;
+	}
+
+	/* only apply this style to anchor tags within a list item*/
+	li a {
+		/*anchor tags be default display inline, here we will tell them to behave like block level elements*/
+		display: block;
+		text-align: center;
+		width: 100px;
+		padding: 10px;
+		text-decoration: none;
+		color: #333;
+	}
+
+	li a:hover {
+		background-color: #111;
+		color: #FFF;
+	}
+
+	li a.active{
+		background-color: #888;
+	}
+	.content {
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 5%;
+		text-align: left;
+		border: 2px solid grey; 
+		padding: 1%;
+	}
+	
+	.content a{
+		text-align: left;
+		/*border-bottom: 2px solid #abb5ba;*/
+		text-decoration: none;
+		color: black;
+	}
