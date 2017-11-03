@@ -2,4 +2,4 @@ The intent for this website was to be a guide for runners, of all levels. The ma
 
 The link the the Hosted Site is http://sites.bxmc.poly.edu/~jessicagonzalez/MidtermSite/
 
-The link to the documentation is https://wordpress.com/post/jessigonzalezwebdev.wordpress.com/30
+The link to the documentation is https://jessigonzalezwebdev.wordpress.com/2017/11/03/midterm-documentation/
