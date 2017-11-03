@@ -11,7 +11,7 @@
 
 <body> 
 	<div class="header">
-	<h1><a href="homepage.html">rhymRunner</a></h1>
+	<h1><a href="index.html">rhymRunner</a></h1>
 	</div>
 
 	<ul class="nav">
@@ -23,6 +23,64 @@
 	<div class="subheader">
 	<h3>Intermediate</h3>
 	</div>
+	
+	<button class="accordion">Speedwork</button>
+	<div class="panel">
+		<a href="http://www.coolrunning.com/engine/2/2_0/100.shtml" target="_blank">
+		<p>Speedwork for Intermediate Runners- coolrunning.com</p>
+		</a>
+	</div>
 
+	<button class="accordion">Runnning Guides</button>
+	<div class="panel">
+		<a href="https://www.medibank.com.au/livebetter/collection/intermediate-running-guides/" target="_blank">
+		<p>Intermediate Running Guides- medibank.com</p>
+		</a>
+	</div>
+
+	<button class="accordion">Maintenance Planning</button>
+	<div class="panel">
+		<a href="https://rw.runnersworld.com/training-plan-finder/maintenance-plan-for-intermediate-runners.html" target="_blank">
+		<p>Maintenance Plan For Intermediate Runners- runnersworld.com</p>
+		</a>
+	</div>
+
+	<button class="accordion">Running Routines</button>
+	<div class="panel">
+		<a href="http://www.fitnesshealth101.com/workout-routines/running/intermediate-running-routines" target="_blank">
+		<p>Intermediate Running Routines- fitnesshealth101.com</p>
+		</a>
+	</div>
+
+	<button class="accordion">Interval Training</button>
+	<div class="panel">
+		<a href="https://www.realbuzz.com/articles-interests/running/article/your-guide-to-interval-training/" target="_blank">
+		<p>Your Guide to Interval Training- realbuzz.com</p>
+		</a>
+	</div>
+
+	<button class="accordion">Mile Plan</button>
+	<div class="panel">
+		<a href="https://womensrunning-compgroup.netdna-ssl.com/wp-content/uploads/2014/10/Mile-Training-Plan-Intermediate.pdf" target="_blank">
+		<p>Mile-Training Plan- womensrunning.com</p>
+		</a>
+	</div>
+
+	<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	    acc[i].onclick = function(){
+	        this.classList.toggle("active");
+	        var panel = this.nextElementSibling;
+	        if (panel.style.display === "block") {
+	            panel.style.display = "none";
+	        } else {
+	            panel.style.display = "block";
+	        }
+	    }
+	}
+	</script>
 </body>
 </html>

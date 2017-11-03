@@ -54,7 +54,7 @@ body {
 	li a.active{
 		background-color: #888;
 	}
-	.content {
+	/*.content {
 		margin-left: 10%;
 		margin-right: 10%;
 		margin-top: 5%;
@@ -66,6 +66,52 @@ body {
 	.content a{
 		text-align: left;
 		/*border-bottom: 2px solid #abb5ba;*/
-		text-decoration: none;
-		color: black;
+		/*text-decoration: none;
+		color: black;*/
+
+	button.accordion {
+	    background-color: #66ccff;
+	    color: #444;
+	    cursor: pointer;
+	    padding: 2%;
+	    width: 100%;
+	    text-align: left;
+	    outline: none;
+	    font-size: 20px;
+	    transition: 0.5s;
+	    color:white;
+	    text-decoration: none;
 	}
+
+	button.accordion a{
+		text-decoration: none;
+	}
+
+	div.panel {
+	    padding: 2% 5%;
+	    background-color: white;
+	    display: none;
+	    transition: max-height 0.2 ease-out;
+	    text-decoration: none;
+	}
+
+	div.panel a{
+		color:black;
+	}
+	
+	button.accordion.active, button.accordion:hover {
+    	background-color: #abb5ba; 
+    	text-decoration: none;
+    }
+	
+	button.accordion:after {
+		content: '\002B';
+		color: #777;
+		font-weight: bold;
+		float:right;
+		margin-left: 5px;
+		text-decoration: none;
+	}
+
+ 
+	

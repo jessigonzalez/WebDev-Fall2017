@@ -11,7 +11,7 @@
 
 <body> 
 	<div class="header">
-	<h1><a href="homepage.html">rhymRunner</a></h1>
+	<h1><a href="index.html">rhymRunner</a></h1>
 	</div>
 
 	<ul class="nav">
@@ -23,6 +23,64 @@
 	<div class="subheader">
 	<h3>Advanced</h3>
 	</div>
+	
+	<button class="accordion">Prerace Pump</button>
+	<div class="panel">
+		<a href="https://www.runnersworld.com/advanced-training/priming-the-prerace-pump" target="_blank">
+		<p>Priming the Prerace Pump- runnersworld.com</p>
+		</a>
+	</div>
 
+	<button class="accordion">PR in the 5k</button>
+	<div class="panel">
+		<a href="https://www.active.com/running/articles/how-advanced-runners-can-pr-in-the-5k?page=1" target="_blank">
+		<p>How Advanced Runners Can PR in the 5k- active.com</p>
+		</a>
+	</div>
+
+	<button class="accordion">Running Technique</button>
+	<div class="panel">
+		<a href="https://snapguide.com/guides/improve-your-running-technique-advanced/" target="_blank">
+		<p>Improve Your Running Technique- snapguide.com</p>
+		</a>
+	</div>
+
+	<button class="accordion">Speedwork</button>
+	<div class="panel">
+		<a href="http://www.coolrunning.com/engine/2/2_4/101.shtml" target="_blank">
+		<p>Speedwork for Advanced Runners</p>
+		</a>
+	</div>
+
+	<button class="accordion">Find the shoes for you</button>
+	<div class="panel">
+		<a href="https://www.runnersworld.com/shoefinder" target="_blank">
+		<p>Shoe Finder- Runner's World</p>
+		</a>
+	</div>
+
+	<button class="accordion">Marathon Running</button>
+	<div class="panel">
+		<a href="https://www.theguardian.com/lifeandstyle/the-running-blog/2016/mar/03/ten-things-every-first-time-marathon-runner-needs-to-know" target="_blank">
+		<p>Ten Things Every First Time Marathon Runner Needs to Know</p>
+		</a>
+	</div>
+
+	<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	    acc[i].onclick = function(){
+	        this.classList.toggle("active");
+	        var panel = this.nextElementSibling;
+	        if (panel.style.display === "block") {
+	            panel.style.display = "none";
+	        } else {
+	            panel.style.display = "block";
+	        }
+	    }
+	}
+	</script>
 </body>
 </html>

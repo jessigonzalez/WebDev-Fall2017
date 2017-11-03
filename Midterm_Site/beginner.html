@@ -11,7 +11,7 @@
 
 <body> 
 	<div class="header">
-	<h1><a href="homepage.html">rhymRunner</a></h1>
+	<h1><a href="index.html">rhymRunner</a></h1>
 	</div>
 
 	<ul class="nav">
@@ -24,7 +24,7 @@
 	<h3>Beginner</h3>
 	</div>
 
-	<div class="content">
+	<!-- <div class="content">
 		<a href="https://www.nytimes.com/guides/well/how-to-start-running" target="_blank">
         <h3>Where to begin</h3>
         </a>
@@ -40,7 +40,65 @@
 		<a href="https://www.active.com/running/articles/10-things-i-wish-i-knew-as-a-new-runner?page=1" target="_blank">
         <h3>Things to keep in mind</h3>
         </a>
+	</div> -->
+	<button class="accordion">Where to Begin</button>
+	<div class="panel">
+		<a href="https://www.nytimes.com/guides/well/how-to-start-running" target="_blank">
+		<p>How to Start Running- The New York Times</p>
+		</a>
 	</div>
+
+	<button class="accordion">Find the shoes for you</button>
+	<div class="panel">
+		<a href="https://www.runnersworld.com/shoefinder" target="_blank">
+		<p>Shoe Finder- Runner's World</p>
+		</a>
+	</div>
+
+	<button class="accordion">Things to keep in mind</button>
+	<div class="panel">
+		<a href="https://www.active.com/running/articles/10-things-i-wish-i-knew-as-a-new-runner?page=1" target="_blank">
+		<p>10 Things I Wished I Knew As A New Runner- Active.com</p>
+		</a>
+	</div>
+	
+	<button class="accordion">Running 101</button>
+	<div class="panel">
+		<a href="http://running.competitor.com/2014/04/training/running-101-basic-speed-workouts-for-runners_8047" target="_blank">
+		<p>Running 101: Basic Speed Workouts For Runners- running.competitor.com</p>
+		</a>
+	</div>
+
+	<button class="accordion">Women's Running</button>
+	<div class="panel">
+		<a href="http://womensrunning.competitor.com/2016/05/training-tips/the-10-most-important-things-for-beginner-runners-to-know_58648" target="_blank">
+		<p>The 10 Most Important Things For Beginner Runners To Know- womensrunning.competitor.com</p>
+		</a>
+	</div>
+	
+	<button class="accordion">Men's Running</button>
+	<div class="panel">
+		<a href="" target="_blank">
+		<p>Absolute Beginners Guide to Running- mensfitness.com</p>
+		</a>
+	</div>
+
+	<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+	    acc[i].onclick = function(){
+	        this.classList.toggle("active");
+	        var panel = this.nextElementSibling;
+	        if (panel.style.display === "block") {
+	            panel.style.display = "none";
+	        } else {
+	            panel.style.display = "block";
+	        }
+	    }
+	}
+	</script>
 
 </body>
 </html>
