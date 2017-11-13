@@ -1,0 +1,39 @@
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>rhymRunner</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/default.css"> 
+</head>
+
+
+<body> 
+	<script>
+	function changeTitle() {
+		document.getElementById("title").innerHTML = "Developer's Bio";
+	}
+	function hiddenWords(words,newColor){
+		words.style.color = newColor;
+	}
+	function showBio(){
+		document.getElementById("paragraph").innerHTML = "Hi, my name is Jessica Gonzalez. I started running competetively in the eigth grade and continued to do so throughout highschool. I ran cross country, indoor track, and outdoor track. Events I ran in include the 5k, 1500m races, 800m races, 4 x 800m relays, and 4 x 400m relays. Future goals include someday running a marathon. Like you, the person reading this, I am also curious about the sport of running and hope to continue to get better. Thanks for visiting! :)"
+	}
+	</script>
+
+	<div class="header">
+	<h1 id = "title" onmouseover="changeTitle()"><a href="index.html">rhymRunner</a></h1>
+	</div>
+
+	<ul class="nav">
+			<li><a href="exercises.html">Exercises</li></a>
+			<li><a href="stretches.html">Stretches</a></li>
+			<li><a href="mealRecipes.html">Meals/Recipes</a></li>
+	</ul>  
+
+	<div id="body">
+		<p id = "paragraph" onmouseover = "hiddenWords(this,'black')" onclick = "showBio()"> Hello, welcome to rhymRunner, click here</p>
+	</div>
+
+</body>
+</html>
