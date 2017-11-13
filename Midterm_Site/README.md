@@ -1,1 +1,2 @@
-The intent for this website was to be a guide for runners, of all levels. The main thing I struggled with was conflicting ideas I had. 
+The intent for this website was to be a guide for runners, of all levels. 
+https://jessigonzalezwebdev.wordpress.com/2017/11/13/midterm-site-with-javascript-functions/
